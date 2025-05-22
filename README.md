@@ -1,6 +1,5 @@
 # Himalayan Climbing Expeditions  
 **Authors:** Siva Adharsh, Calvin Soe Frederick, Goh Si Xian, Amanda, Yashita Makhijani, Nathanial Teo  
-**Date:** 2025-04-18 :contentReference[oaicite:0]{index=0}
 
 ---
 
@@ -9,7 +8,7 @@ This analysis investigates the factors that influence the success rate of Himala
 
 1. Cleaned and merged multiple data sources.  
 2. Computed key summary statistics.  
-3. Created visualizations to uncover trends over time and by region.  
+3. Created visualisations to uncover trends over time and by region.  
 4. Discussed insights and limitations.
 
 ---
@@ -34,12 +33,12 @@ To answer this, we explored variables such as country of origin, elevation profi
 ---
 
 ## Data Preparation  
-- **TidyTuesday dataset**: Imported “History of Himalayan Mountaineering Expeditions” by Nicolas Foss (2025-01-21) :contentReference[oaicite:1]{index=1}.  
-- **Elevation data**: Retrieved country elevation statistics from WorldPopulationReview (2025) :contentReference[oaicite:2]{index=2}.  
+- **TidyTuesday dataset**: Imported “History of Himalayan Mountaineering Expeditions” by Nicolas Foss (2025-01-21) 
+- **Elevation data**: Retrieved country elevation statistics from WorldPopulationReview (2025)
 - **Wrangling steps**:  
-  - Standardized column names with **dplyr**.  
+  - Standardised column names with **dplyr**.  
   - Filtered out incomplete entries.  
-  - Joined expedition and elevation tables on country codes.
+  - Joined the expedition and elevation tables on country codes.
 
 ---
 
@@ -50,7 +49,7 @@ To answer this, we explored variables such as country of origin, elevation profi
 
 ---
 
-## Data Visualization  
+## Data Visualisation  
 - **Time series** of expedition counts vs. success rate.  
 - **Bar charts** ranking countries by average success.  
 - **Scatter plots** correlating elevation with success.  
@@ -68,24 +67,10 @@ Each plot was created using **ggplot2** layered with **dplyr** summaries for cla
 
 ---
 
-## Team Roles  
-- **Data Wrangling & Merging**: Siva Adharsh, Calvin Soe Frederick  
-- **Statistical Summaries**: Goh Si Xian, Amanda  
-- **Visualization & Reporting**: Yashita Makhijani, Nathanial Teo  
-
----
-
 ## References  
 1. Foss, N. (2025). *The History of Himalayan Mountaineering Expeditions* [Data set]. TidyTuesday (2025-01-21). :contentReference[oaicite:3]{index=3}  
 2. “Elevation by country 2025.” *WorldPopulationReview*. :contentReference[oaicite:4]{index=4}  
 3. Bhandari, S., et al. (2015). *Genetic evidence of a recent Tibetan ancestry to Sherpas in the Himalayan region*. *Scientific Reports*, 5, 16249. :contentReference[oaicite:5]{index=5}  
 4. Annapurna avalanche kills two Nepali climbers. (2025, April 8). *Phys.org*. :contentReference[oaicite:6]{index=6}  
 
----
-
-> **How to run**  
-> 1. Clone this repository.  
-> 2. Open `analysis.Rmd`.  
-> 3. Knit to HTML or PDF to reproduce all tables and figures.  
-> 4. Install required packages with `install.packages(c("tidyverse", "lubridate", "ggthemes"))`.  
 
